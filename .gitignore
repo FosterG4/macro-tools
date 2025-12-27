@@ -1,0 +1,24 @@
+# Visual Studio
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+Build/
+
+# Nuget
+*.lock.json
+*.nuget.props
+*.nuget.targets
+
+# Logs
+*.log
+
+# Other
+Thumbs.db
+.DS_Store
