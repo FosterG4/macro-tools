@@ -22,8 +22,8 @@ Ensure you have the [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dot
 
 ### 2. Clone the Repository
 ```powershell
-git clone <repository-url>
-cd macroe
+git clone https://github.com/FosterG4/macro-tools.git
+cd macro-tools
 ```
 
 ### 3. Build for Release (Single File)
