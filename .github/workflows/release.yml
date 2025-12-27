@@ -2,8 +2,10 @@ name: Release
 
 on:
   push:
+    branches:
+      - main
     tags:
-      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+      - 'v*'
 
 jobs:
   build:
@@ -27,9 +29,10 @@ jobs:
     - name: Create Release
       id: create_release
       uses: softprops/action-gh-release@v2
-      if: startsWith(github.ref, 'refs/tags/')
       with:
         files: ./publish/MacroTool.exe
+        tag_name: ${{ github.ref_type == 'tag' && github.ref_name || format('v{0}', github.run_number) }}
+        name: ${{ github.ref_type == 'tag' && github.ref_name || format('Release v{0}', github.run_number) }}
         draft: false
         prerelease: false
         generate_release_notes: true
