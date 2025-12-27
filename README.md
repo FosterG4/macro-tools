@@ -2,6 +2,8 @@
 
 **Macro Tool** is a lightweight, high-performance **keyboard macro** and automation utility for Windows. Built with .NET 8, it enables background key simulation with millisecond precision, allowing you to automate repetitive tasks in specific windows without losing focus.
 
+![Macro Tool Preview](Screenshot%202025-12-27%20151437.png)
+
 ## Features
 
 - **Keyboard Macro**: Record and replay complex key sequences.
